@@ -1,0 +1,128 @@
+// sass for my test
+$bdy-bg-clr: rgb(26, 24, 24);
+$nav-bg-clr: rgb(12, 9, 9);
+$displayf: flex;
+$displayg: grid;
+$bdard1: 8px 8px 0 0;
+$bdard: 0 0 8px 8px;
+$bdard2: 8px;
+$color: rgb(208, 208, 208);
+
+body {
+    background-color: $bdy-bg-clr;
+    margin: 0;
+    padding: 0;
+
+    nav {
+    background-color: $nav-bg-clr;
+    border-radius: $bdard1;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+
+    .container1 {
+        display: $displayf;
+
+        .group1 {
+           
+            display: $displayf;
+            gap: 20px;
+             margin: 10px auto 10px 10px;
+        }
+         .group2 {
+            display: $displayf;
+            gap: 20px;
+             margin: 10px;
+    }
+}
+}
+
+section {
+    display: $displayf;
+  flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    height: 100vh;
+     
+
+    .container2 {
+    display: $displayf;
+    flex-direction: column;
+  
+    width: 60%;
+    height:50%;
+    margin: 10px;
+   // border: 2px solid white;
+
+    .div1 {
+        width: 100%;
+        height: 80%;
+        background-color: rgb(38, 36, 36);
+          border-radius: $bdard1;
+    }
+    .div2 {
+        width: 100%;
+        display: $displayf;
+       height: 20%;
+        background-color: rgb(14, 12, 12);
+          border-radius: $bdard;
+
+     form {
+        width: 100%;
+        height: 100%;
+        display: $displayf;
+
+           textarea{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $color;
+   }
+     }
+}
+
+}
+
+.container3 {
+   //  border: 1px solid white;
+      display: $displayg;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: $bdard2;
+    width: 60%;
+    height:50vh;
+    margin: 10px;
+    gap: 4px;
+
+    .r1 {
+            background:rgb(37, 38, 38)
+        }
+    
+    .n1 {
+        background: rgb(81, 82, 82);
+    }
+
+    .eq1 {}
+        .items {
+            color: $color;
+            font-weight: bold;
+            border-radius: 6px;
+            margin: 4px;
+            display: $displayf;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: rgb(132, 186, 186);
+                cursor: pointer;
+            }
+        }
+    
+}
+
+}
+}
+
